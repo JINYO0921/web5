@@ -1,92 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>台南旅遊景點介紹</title>
     <style>
-        div{
-            padding: 25px 50px 75px 200px;
-            border:5px solid gray;
-            margin: 25px 50px 25px 50px;
-            font-size: 25px;
-        }
-        img{
-            width: 40%;
-        }
-        h1{
+        body {
+            font-size: 18px;
+            line-height: 1.6;
             text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content {
+            padding: 30px;
+            border: 5px solid gray;
+            margin: 20px 0;
+            font-size: 22px;
+            text-align: left;
+            overflow: hidden;
+        }
+        .content img {
+            width: 40%;
+            border: 10px solid #d3bbbb;
+            padding: 5px;
+        }
+        .content:nth-child(even) img {
+            float: right;
+            margin-left: 20px;
+        }
+        .content:nth-child(odd) img {
+            float: left;
+            margin-right: 20px;
+        }
+        h1 {
             color: gray;
         }
-        li{
+        ul {
+            padding: 0;
+            text-align: center;
+        }
+        li {
             display: inline-block;
             list-style-type: none;
             width: 200px;
             background-color: lightblue;
             text-align: center;
-            position: relative;
-            left: 20%;
+            margin: 5px;
+            padding: 10px;
         }
-        #a{
-            font: left;
-            vertical-align: top;
-            border: 10px solid #d3bbbb;
-            padding: 5px;
-        }
-        #b{
-            font: left;
-            vertical-align: top;
-            border: 10px solid #d3bbbb;
-            padding: 5px;
-        }
-        #c{
-            font: left;
-            vertical-align: top;
-            border: 10px solid #d3bbbb;
-            padding: 5px;
-        }
-        #d{
-            font: left;
-            vertical-align: top;
-            border: 10px solid #d3bbbb;
-            padding: 5px;
-        }
-     </style>
+    </style>
 </head>
 <body>
-    <div>
-    <h1>台南旅遊景點介紹</h1>
-    <ul>
-        <li>四草綠色隧道</li>
-        <li>井仔腳瓦盤鹽田</li>
-        <li>赤崁樓</li>
-        <li>台南孔廟</li>
-    </ul>
-    
-            <h1>四草綠色隧道</h1>
+    <div class="container">
+        <h1>台南旅遊景點介紹</h1>
+        <ul>
+            <li>四草綠色隧道</li>
+            <li>井仔腳瓦盤鹽田</li>
+            <li>赤崁樓</li>
+            <li>台南孔廟</li>
+        </ul>
 
-            <div>
-                <img id="a" src="四草綠色隧道.jpg">
-
-                四草綠色隧道在台江國家公園內·裡面有溼地及豐富的生態資源，可以坐船遊覽由紅樹林交織成的綠色隧道，潮間帶的招潮蟹、彈塗魚與紅樹林，體會不一樣的大自然感受。
-            </div>
-    
-    
-            <h1>井仔腳瓦盤鹽田</h1>
-            <div>
-                <img id="b" src="井仔腳瓦盤鹽田.jpg">
-                井仔腳瓦盤鹽田是北門的第一座鹽田，西元1818年開始曬，因人工成本過高，在2002年停止曬鹽，鹽田漸漸荒廢目前開發為觀光景點，遊客在此可體驗傳統曬鹽、挑鹽與收鹽。</p>
-            </div>
-        
-            <h2>赤崁樓</h2>
-            <p>1653年為當時進佔台灣南部之荷蘭人所建，最初稱為「普羅民遮城」，與安平的「熱蘭遮城」遙遙相對，互為埼角。熱蘭遮城作為荷蘭總督統治中樞，普羅民遮城則作為行政及商業中心。</p>
-        
-        
-            <h2>台南孔廟</h2>
-            <p>「全臺首學」臺灣的第一座孔子廟由臺灣孔子廟創建於明永曆19年（1665年），當時稱為「先師聖廟」，至今已有三百多年的歷史，由島上第一個漢人政權鄭氏王朝所創立，意欲設立學校教育，培養為政革命的人才。清領時期亦延續孔廟的教育功能，為臺灣官辦的最高學府「臺灣府學」，升作府學，孔廟依然是讀書人重視之聖廟，有著崇高的地位。
-            </p> 
-        
+        <h1>四草綠色隧道</h1>
+        <div class="content">
+            <img src="四草綠色隧道.jpg" alt="四草綠色隧道">
+            四草綠色隧道在台江國家公園內，裡面有溼地及豐富的生態資源，可以坐船遊覽由紅樹林交織成的綠色隧道，潮間帶的招潮蟹、彈塗魚與紅樹林，體會不一樣的大自然感受。
         </div>
-        <p style="clear: left;">立即查看怎麼前進台南，利用下方資訊，帶你輕鬆出遊台南景點!</p>
+
+        <h1>井仔腳瓦盤鹽田</h1>
+        <div class="content">
+            <img src="井仔腳瓦盤鹽田.jpg" alt="井仔腳瓦盤鹽田">
+            井仔腳瓦盤鹽田是北門的第一座鹽田，西元1818年開始曬，因人工成本過高，在2002年停止曬鹽，鹽田漸漸荒廢，目前開發為觀光景點，遊客在此可體驗傳統曬鹽、挑鹽與收鹽。
+        </div>
+
+        <h1>赤崁樓</h1>
+        <div class="content">
+            <img src="赤崁樓.jpg" alt="赤崁樓">
+            1653年為當時進佔台灣南部之荷蘭人所建，最初稱為「普羅民遮城」，與安平的「熱蘭遮城」遙遙相對，互為犄角。熱蘭遮城作為荷蘭總督統治中樞，普羅民遮城則作為行政及商業中心。
+        </div>
+
+        <h1>台南孔廟</h1>
+        <div class="content">
+            <img src="台南孔廟.jpg" alt="台南孔廟">
+            「全臺首學」臺灣的第一座孔子廟由臺灣孔子廟創建於明永曆19年（1665年），當時稱為「先師聖廟」，至今已有三百多年的歷史，由島上第一個漢人政權鄭氏王朝所創立，意欲設立學校教育，培養為政革命的人才。清領時期亦延續孔廟的教育功能，為臺灣官辦的最高學府「臺灣府學」，升作府學，孔廟依然是讀書人重視之聖廟，有著崇高的地位。
+        </div>
+
+        <p>立即查看怎麼前進台南，利用下方資訊，帶你輕鬆出遊台南景點!</p>
+    </div>
 </body>
 </html>
